@@ -1,0 +1,5 @@
+# ignore workdir
+/workdir/*
+
+# ignore workspace
+/workspace
