@@ -83,7 +83,7 @@ sudo docker run -h "localhost" -v $PWD/<your workspace directory>:/root/workspac
 ```
 
 ## Run spark notebook(windows)
-open the powershell or git bash and make your workspace directory.
+open the powershell or git bash as administrator and make your workspace directory.
 ```
 mkdir <your workspace name>
 ```
