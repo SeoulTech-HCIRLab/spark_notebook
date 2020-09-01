@@ -1,12 +1,12 @@
 # build for spark 2
-# /spark3/*
-# /workdir/spark-3.0.0-bin-hadoop3.2.tar
-# /workdir/hadoop-3.2.1.tar
+/spark3/*
+/workdir/spark-3.0.0-bin-hadoop3.2.tar
+/workdir/hadoop-3.2.1.tar
 
 # build for spark 3
-/spark2/*
-/workdir/hadoop-2.7.7.tar
-/workdir/spark-2.4.6-bin-hadoop2.7/.tar
+# /spark2/*
+# /workdir/hadoop-2.7.7.tar
+# /workdir/spark-2.4.6-bin-hadoop2.7/.tar
 
 /workspace
 download.sh
