@@ -8,6 +8,8 @@ RUN apt-get -yqq update && \
     apt-get -yqq install openssh-server && \
     apt-get -yqq install ssh && \
     apt-get -yqq install rsync && \
+    apt-get -yqq install curl && \
+    apt-get -yqq install unzip && \
     apt-get -yqq install python3.6 && \
     apt-get -yqq install python3-pip && \
     ln -s /usr/bin/python3 /usr/bin/python && \
