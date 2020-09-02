@@ -3,3 +3,5 @@
 
 # ignore workspace
 /workspace
+
+.GH_TOKEN.txt

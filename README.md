@@ -75,11 +75,11 @@ mkdir <your workspace name>
 ```
 and run (spark2)
 ```
-sudo docker run -h "localhost" -v $PWD/<your workspace directory>:/root/workspace -p 8888:8888 -p 8080:8080 -p 8088:8088 -p 4040:4040 -p 50070:50070 titania7777/spark2_notebook:1
+sudo docker run -h "localhost" -v $PWD/<your workspace directory>:/root/workspace -p 8888:8888 -p 8080:8080 -p 8088:8088 -p 4040:4040 -p 50070:50070 titania7777/spark2_notebook
 ```
 and run (spark3)
 ```
-sudo docker run -h "localhost" -v $PWD/<your workspace directory>:/root/workspace -p 8888:8888 -p 8080:8080 -p 8088:8088 -p 4040:4040 -p 50070:50070 titania7777/spark3_notebook:1
+sudo docker run -h "localhost" -v $PWD/<your workspace directory>:/root/workspace -p 8888:8888 -p 8080:8080 -p 8088:8088 -p 4040:4040 -p 50070:50070 titania7777/spark3_notebook
 ```
 
 ## Run spark notebook(windows)
@@ -89,9 +89,12 @@ mkdir <your workspace name>
 ```
 and run (spark2)
 ```
-docker run -h "localhost" -v $PWD/<your workspace directory>:/root/workspace -p 8888:8888 -p 8080:8080 -p 8088:8088 -p 4040:4040 -p 50070:50070 titania7777/spark2_notebook:1
+docker run -h "localhost" -v $PWD\<your workspace directory>:/root/workspace -p 8888:8888 -p 8080:8080 -p 8088:8088 -p 4040:4040 -p 50070:50070 titania7777/spark2_notebook
 ```
 and run (spark3)
 ```
-docker run -h "localhost" -v $PWD/<your workspace directory>:/root/workspace -p 8888:8888 -p 8080:8080 -p 8088:8088 -p 4040:4040 -p 50070:50070 titania7777/spark3_notebook:1
+docker run -h "localhost" -v $PWD\<your workspace directory>:/root/workspace -p 8888:8888 -p 8080:8080 -p 8088:8088 -p 4040:4040 -p 50070:50070 titania7777/spark3_notebook
 ```
+
+*in windows has some issue about access the port 50070 in that case, you can remove "-p 50070:50070" when to run docker image or see this issue.  
+*50070 port is hadoop namenode web ui port
